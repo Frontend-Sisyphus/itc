@@ -1,9 +1,15 @@
 "use client";
 
 import { useQuery } from "@tanstack/react-query";
-import { getProjects, getTechnologies, getUsers, getUsersSearch } from "@/lib/api/client";
+
+import {
+  getProjects,
+  getTechnologies,
+  getUsers,
+  getUsersSearch,
+} from "@/lib/api/client";
 import { queryKeys } from "@/lib/api/query-keys";
-import { members as mockMembers } from "@/lib/data";
+import { members as mockMembers } from "@/data/members";
 import { mapUsersToMembers } from "@/lib/taskmanager/map";
 
 export function useUsersQuery() {

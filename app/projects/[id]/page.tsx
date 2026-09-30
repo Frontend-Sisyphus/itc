@@ -1,12 +1,14 @@
-import { Footer } from "@/components/footer";
-import { Header } from "@/components/header";
-import { ProjectDetail } from "@/components/project-detail";
+import React from "react";
 
-type Props = {
+import { Header } from "@/widgets/Header";
+import { ProjectDetail } from "@/entities/ProjectDetail";
+import { Footer } from "@/widgets/Footer";
+
+interface ProjectPageProps {
   params: Promise<{ id: string }>;
-};
+}
 
-export default async function ProjectPage({ params }: Props) {
+export default async function ProjectPage({ params }: ProjectPageProps) {
   const { id: raw } = await params;
   const id = Number(raw);
 

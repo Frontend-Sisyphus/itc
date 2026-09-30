@@ -1,6 +1,8 @@
-import { Footer } from "@/components/footer";
-import { Header } from "@/components/header";
-import { Projects } from "@/components/projects";
+import React from "react";
+
+import { Header } from "@/widgets/Header";
+import { Projects } from "@/widgets/Projects";
+import { Footer } from "@/widgets/Footer";
 
 export default function ProjectsPage() {
   return (

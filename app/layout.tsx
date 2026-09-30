@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { JetBrains_Mono, Manrope, Unbounded } from "next/font/google";
-import { Providers } from "@/components/providers";
+
+import { Providers } from "@/shared/Providers";
+
 import "./globals.css";
 
 const manrope = Manrope({
@@ -24,7 +26,11 @@ export const metadata: Metadata = {
     "Сообщество студентов, которые вместе готовятся к хакатонам, разбирают олимпиадные задачи и подают заявки на гранты.",
 };
 
-export default function RootLayout({ children }: LayoutProps<"/">) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html
       lang="ru"

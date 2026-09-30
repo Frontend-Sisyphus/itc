@@ -1,11 +1,13 @@
-import { About } from "@/components/about";
-import { Events } from "@/components/events";
-import { Footer } from "@/components/footer";
-import { Header } from "@/components/header";
-import { Hero } from "@/components/hero";
-import { Join } from "@/components/join";
-import { Members } from "@/components/members";
-import { Projects } from "@/components/projects";
+import React from "react";
+
+import { Header } from "@/widgets/Header";
+import { Hero } from "@/widgets/Hero";
+import { About } from "@/widgets/About";
+import { Members } from "@/widgets/Members";
+import { Projects } from "@/widgets/Projects";
+import { Events } from "@/widgets/Events";
+import { Join } from "@/widgets/Join";
+import { Footer } from "@/widgets/Footer";
 
 export default function Home() {
   return (

@@ -1,6 +1,8 @@
-import { Footer } from "@/components/footer";
-import { Header } from "@/components/header";
-import { MembersDirectory } from "@/components/members-directory";
+import React from "react";
+
+import { Header } from "@/widgets/Header";
+import { MembersDirectory } from "@/widgets/MembersDirectory";
+import { Footer } from "@/widgets/Footer";
 
 export default function MembersPage() {
   return (
